@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Gato!!</title>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/tablero.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/flexbox.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<script src="js/gato.js"></script>
+</head>
+<body>
+	<div class="row cabeza corrige middle-xs">
+		<div class="col-md-3 headcon" style="padding-left:2em;">
+			<h2 class="center tada animated">Gato!</h2> 
+		</div>
+		<div class="col-md-6 gana">
+		</div>
+		<div class="col-md-3 side">
+			<h3 id="players" class="center"></h3>
+		</div>
+	</div>
+
+	<div class="" id="iniciar">
+		<div class="row corrige">
+			<div class="col-md-12">
+				<h2 class="center">2 jugadores</h2>
+				<h1 class="center">Escojan un jugador:</h1>
+			</div>
+		</div>
+		<div class="row corrige" style="padding-top: 5em; padding-left:3em; padding-right:3em;">
+			<div class="col-md-offset-1 col-md-10">
+				<div class="row corrige">
+					<div class="col-md-6">
+						<div class="row corrige middle-xs pci">
+							<div class="col-md-3"><h3>Jugador 1:</h3></div>
+							<div class="col-md-3"><input type="text" id="j1name" placeholder="Escribe tu nombre aquí..."></div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="row corrige middle-xs peq">
+							<div class="col-md-3"><h3>Jugador 2:</h3></div>
+							<div class="col-md-3"><input type="text" id="j2name" placeholder="Escribe tu nombre aquí..."></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row corrige actions">
+			<div class="col-md-12">
+				<p class="center">
+					<button class="center" id="boton">
+						Comenzar el juego
+					</button>
+				</p>
+			</div>
+		</div>
+	</div>
+	<div id="body" style="display:none;">
+		<div class="row corrige" >
+			<div class="col-md-6 gato-container container lightSpeedIn animated" id="g">
+				<div class="row gato corrige center">
+					<div class="col-md">
+						<div class="col">
+							<div class="col-md-4 casilla" id="cas1"> </div>
+							<div class="col-md-4 casilla" id="cas2"> </div>
+							<div class="col-md-4 casilla" id="cas3"> </div>
+						</div>
+						<div class="col">
+							<div class="col-md-4 casilla" id="cas4"> </div>
+							<div class="col-md-4 casilla" id="cas5"> </div>
+							<div class="col-md-4 casilla" id="cas6"> </div>
+						</div>
+						<div class="col">
+							<div class="col-md-4 casilla" id="cas7"> </div>
+							<div class="col-md-4 casilla" id="cas8"> </div>
+							<div class="col-md-4 casilla" id="cas9"> </div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 dashboard" style="padding-top: 1em; id="dashboard" ">
+				<div class="row corrige">
+					<div class="col-md">
+						<h2 class="center">Ronda <span id="round"></span></h2>
+					</div>
+				</div>
+				<div id="jugadoresLista" style="margin-top: 2em;">
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		inicio();
+	</script>
+</body>
+</html>

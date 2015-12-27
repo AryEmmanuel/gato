@@ -1,0 +1,130 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+body {
+	background-color: whitesmoke; /*rgb(35, 35, 185);*/
+	font-family: 'Montserrat', sans-serif;
+	margin: 0;
+}
+h1 {
+	font-size: 2.25em;
+	font-family: 'Montserrat', serif;
+	color: black;
+}
+h2, h3, h4, h5, h6 {
+	font-family: 'Montserrat', serif;	
+}
+.center {
+	text-align: center;
+}
+.cabeza {
+	padding: 0.3em;
+	background-color: rgb(17, 17, 97);
+	color: white;
+	box-shadow: none;
+	border-bottom: 1px solid rgb(255,255,255);
+}
+.cabeza h2, .cabeza h3 {
+	font-weight: normal;
+	color: white;
+}
+.gato {
+	/*text-align: center;*/
+}
+.gato-container {
+	/*border-right: 2px solid rgb(10, 50, 180);*/
+	padding-top: 0;
+}
+.corrige {
+	margin: 0;
+}
+.container {
+	padding: 2em;
+}
+.thumb {
+	width: 50px;
+	height: 50px;
+}
+#iniciar {
+	padding-top: 5em;
+}
+.dashboard {
+	background-color: rgb(245,245, 245);
+}
+.pci, .peq {
+	border-radius: 5px;
+	padding: 1em;
+	background-color: rgba(200,200,200,0.46);
+}
+.pci h3, .peq h3 {
+	color: black;
+}
+.pci {
+	background-image: url(../circulo-fondo.png);
+	background-repeat: no-repeat;
+	background-position-y: 50%;
+	background-position-x: -25%;
+}
+.peq {
+	background-image: url(../equis.png);
+	background-repeat: no-repeat;
+	background-position-y: 50%;
+	background-position-x: -15%;
+}
+input[type=text] {
+	padding: 0.5em;
+	font-family: sans-serif;
+	border:none;
+	background-color: white;
+	border-left: 5px solid rgb(0,90,190);
+	border-radius: 0px;
+}
+.actions {
+	padding: 3em;
+	margin-top: 3em;
+	margin-right: 0;
+}
+button {
+	font-family: 'Montserrat', serif;
+	font-size: 1.2em;
+	color: white;
+	background-color: rgb(10, 50, 180);
+	border:2px solid rgb(10,40,150);
+	border-radius: 2px;
+	padding: 1em;
+}
+button:hover {
+	background-color: rgb(9,45,162);
+}
+.ganadora {
+	color: gold;
+}
+.ganadora h1, .ganadora h4 {
+	color: gold;
+}
+.empatadora {
+}
+.empatadora h1, .empatadora h4, .empatadora h3 {
+	color: red;
+}
+.casilla {
+	text-align: center;
+	width: 150px;
+	height: 150px;
+	display: inline-block;
+	background-color: whitesmoke;
+	color: white;
+	border: 2px dashed gray;
+}
+.marca {
+	background-color: rgb(30,90,85);
+}
+.vicCon {
+	padding: 2em;
+}
+.side p #reini {
+	padding: 1em;
+	font-size: .8em;
+}
+.win-bar {
+	color: gold;
+}

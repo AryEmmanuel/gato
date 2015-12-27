@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<canvas id="circulo"></canvas>
+	<canvas id="equis"></canvas>
+	<script type="text/javascript">
+		var circulo, equis, dibcir, dibx;
+		circulo = document.getElementById('circulo');
+		equis = document.getElementById('equis');
+		dibx = equis.getContext("2d");
+		dibcir = circulo.getContext("2d");
+
+		equis.height = 150;
+		equis.width = 150;
+		circulo.height = 150;
+		circulo.width = 150;
+
+		dibx.beginPath();
+		dibx.arc(75, 75, 50, 0, (Math.PI * 2), false);
+		dibx.strokeStyle = "rgb(100,100,100)";
+		dibx.lineWidth = 5;
+		dibx.stroke();
+		dibx.closePath();
+
+		dibcir.beginPath();
+		dibcir.moveTo(25,25);
+		dibcir.lineTo(125,125);
+		dibcir.moveTo(125, 25);
+		dibcir.lineTo(25, 125);
+
+		dibcir.strokeStyle = "rgb(10, 50, 180)";
+		dibcir.lineWidth = 5;
+		dibcir.stroke();
+		dibcir.closePath();
+	</script>
+</body>
+</html>
